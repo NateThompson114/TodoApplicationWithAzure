@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Todo]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+    [Task] NVARCHAR(255) NOT NULL,
+    [AssignedTo] INT NOT NULL,
+    [IsComplete] BIT NOT NULL DEFAULT 0
+)
